@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+body {
+  margin: 0;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+header h1,
+footer h1 {
+  font-weight: 400;
+}
+
+.featured-grid {
+  padding: 40px 15px;
+}
+
+.featured-grid .featured-grid__item {
+  padding-bottom: 50px;
+}
+
+.featured-grid .featured-grid__item img {
+  width: 100%;
+}
+
+.featured-grid .featured-grid__item h2 {
+  font-size: 30px;
+  line-height: 35px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+.featured-grid .featured-grid__item p {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 15px 0 20px 0;
+}
+
+.featured-grid .featured-grid__item a {
+  font-size: 14px;
+}
+
+@media (min-width: 720px) {
+  .featured-grid {
+    padding: 30px 15px;
+    display: grid;
+    grid-template-columns: 4.06504065% 12.814556717% 16.296296296% 2.519034714% 13.008130081% 2.322880372% 8.439798684% 8.594657375% 13.777777778% 9.451025939% 8.633372048%;
+    grid-template-rows: 157px auto 57px auto 73px 170px auto 52px auto 50px;
+  }
+
+  .featured-grid .featured-grid__item {
+    padding-bottom: 0;
+  }
+
+  .featured-grid .featured-grid__item h2 {
+    font-size: 40px;
+    margin-top: 15px;
+    line-height: 43px;
+  }
+
+  .featured-grid .featured-grid__item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 2;
+  }
+
+  .featured-grid .featured-grid__item:nth-child(2) {
+    grid-column-start: 8;
+    grid-column-end: 11;
+  }
+
+  .featured-grid .featured-grid__item:nth-child(3) {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 4;
+  }
+
+  .featured-grid .featured-grid__item:nth-child(4) {
+    grid-column-start: 9;
+    grid-column-end: 12;
+    grid-row-start: 4;
+  }
+
+  .featured-grid .featured-grid__item:nth-child(5) {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 7;
+  }
+
+  .featured-grid .featured-grid__item:nth-child(6) {
+    grid-column-start: 7;
+    grid-column-end: 12;
+    grid-row-start: 6;
+  }
+
+  .featured-grid .featured-grid__item:nth-child(7) {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 9;
+  }
+}
+.button,
+.button:active,
+.button:hover,
+.button:focus {
+  text-decoration: none;
+  -webkit-transition: 250ms ease;
+  -moz-transition: 250ms ease;
+  -o-transition: 250ms ease;
+  transition: 250ms ease;
+  -o-transition-property: background, border-color, color;
+  -moz-transition-property: background, border-color, color;
+  -webkit-transition-property: background, border-color, color;
+  transition-property: background, border-color, color;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "brandon-grotesque", sans-serif;
+  font-size: inherit;
+  font-weight: 400;
+  height: auto;
+  line-height: inherit;
+  margin: 0;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button:hover,
+.button:active:hover,
+.button:hover:hover,
+.button:focus:hover {
+  background: #000;
+  color: #fff;
+}
+
+.button.button-pink,
+.button.button-pink:active,
+.button.button-pink:hover,
+.button.button-pink:focus {
+  background: #f7eeeb;
+  border: 1px solid #f7eeeb;
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.button.button-pink:hover,
+.button.button-pink:active:hover,
+.button.button-pink:hover:hover,
+.button.button-pink:focus:hover {
+  background: transparent;
+  border: 1px solid #000;
+}
+
+.svg-icon {
+  display: inline-block;
+}
