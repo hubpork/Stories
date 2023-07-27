@@ -1,0 +1,150 @@
+body {
+    overflow-x: hidden;
+    font-family: "Pontano Sans", sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 1rem;
+    color: #888;
+    background: #fff;
+    text-rendering: optimizeLegibility;
+}
+
+
+h1, h2, h3, h4 {
+    color: #333;
+    font-weight: normal;
+    margin: 1.75rem 0 1rem 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2.125rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+p {
+    margin: 0;
+}
+p + p {
+    margin-top: 0.5em;
+}
+
+.grid-container * {
+    position: relative;
+}
+
+.grid-container {
+    color: #333;
+    margin: 0 auto 5rem;
+    width: min(1024px, 100%);
+    display: grid;
+    grid-template-columns: 4fr 20px 2fr 20px 6.5fr;
+    grid-auto-rows: minmax(min-content, max-content);
+}
+
+@media (min-width: 850px) {
+    .grid-container {
+        grid-row-gap: 20px;
+    }
+}
+
+div {
+    grid-column: 1/span 5;
+}
+
+.mid-col-right {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 850px) {
+    .top-col-left {
+        grid-column: 1/span 3;
+    }
+
+    .top-col-right {
+        grid-column: 5/span 5;
+    }
+
+    .mid-col-left {
+        grid-column: 1/span 1;
+    }
+
+    .mid-col-right {
+        margin: 0;
+        grid-column: 3/span 5;
+    }
+
+    .bottom-col-left {
+        grid-column: 1/span 3;
+    }
+
+    .bottom-col-right {
+        grid-column: 5/span 5;
+    }
+}
+@media (min-width: 850px) {
+    h2 {
+        margin-top: 0;
+    }
+}
+
+
+p {
+    margin: 0;
+}
+p + h2, p + p {
+    margin-top: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.mid-col-right::before {
+    content: "";
+    padding-top: 46.875%;
+    display: block;
+}
+.mid-col-right img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+hr {
+    border: none;
+}
+
+hr:after {
+    font-family: Georgia, "New Times Roman", serif;
+    content: "———";
+    display: block;
+    font-size: 1.5em;
+    margin: 1em auto;
+    text-align: center;
+}
+
+.mid-col-left p:last-child:after {
+    content: "❦";
+    display: inline;
+    font-family: Georgia, "New Times Roman", serif;
+    font-size: 1.5em;
+    line-height: 0.5;
+}

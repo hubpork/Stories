@@ -4,7 +4,7 @@ body {
     font-size: 1.125rem;
     line-height: 1.5;
     margin: 0;
-    padding: 0;
+    padding: 1em;
     color: #888;
     background: #fff;
     text-rendering: optimizeLegibility;
@@ -41,7 +41,8 @@ img {
 }
 
 article {
-    margin: 0 auto;
+    color: #333;
+    margin: 0 auto 5rem;
     width: min(1024px, 100%);
 }
 
@@ -49,13 +50,13 @@ article {
     .left {
         float: left;
         margin-left: calc(-50vw + 50%);
-        margin-right: 1rem;
+        margin-right: 1.5rem;
     }
 
     .right {
         float: right;
         margin-right: calc(-50vw + 50%);
-        margin-left: 1em;
+        margin-left: 1.5em;
     }
 }
 
