@@ -1,2 +1,2 @@
 # Stories
-Layouts I like... mainly in Grid in use
+Layouts I like... mainly with display grid
