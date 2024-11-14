@@ -1,39 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stories</title>
-    <link rel="stylesheet" href="/01/dist/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pontano+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-</head>
+    <link rel="icon" href="https://assets.codepen.io/67044/favicon-stories.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<body>
-    <article class="content">
-        <h1>Stories</h1>
-        <ol>
-            <li>
-                <a href="/01/dist/index.html" class="">Story 01 - Hangman</a>
-            </li>
-            <li>
-                <a href="/02/dist/index.html" class="">Story 02 - ShopShop</a>
-            </li>
-            <li>
-                <a href="/03/dist/index.html" class="">Story 03 - Wanderlust</a>
-            </li>
-            <li>
-                <a href="/04/dist/index.html" class="">Story 04 - Laid Back Loafers</a>
-            </li>
-            <li>
-                <a href="/05/dist/index.html" class="">Story 05 - InFlow ❦</a>
-            </li>
-    
-        </ol>
-    </article>
-</body>
+  <body>
+    <header class="header row" data-direction="rtl">
+      <div class="header__top">
+        <div>
+          <h1 class="logo">Stories <sup>Layouts we love</sup></h1>
+          <p>
+            Layout patterns built using modern CSS APIs to help you build common
+            interfaces such as cards, dynamic grid areas, and full-page layouts.
+            We want to help you build beautiful, accessible, fast, and secure
+            websites that work cross-browser, and for all of your users.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="header__middle">
+        <div class="tagline">By <a href="https://www.maillard.dev">Michel Maillard</a></div>
+      </div>
+      <hr />
+    </header>
 
+    <main class="wrapper">
+      <section class="prose">
+
+        <ul class="cards grid">
+            <li>
+              <a href="/01/dist/index.html" class="card">
+                <img class="card__image" loading="lazy" src="https://assets.codepen.io/67044/poseidon.png" alt="Poseidon">
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                    <img class="card__thumb" loading="lazy" src="https://assets.codepen.io/67044/internal/avatars/users/default.png?format=auto&version=1&width=80&height=80" alt="Michel">
+                    <div class="card__header-text">
+                      <h3 class="card__title">Poseidon</h3>            
+                      <span class="card__status">Last modified: November 2024</span>
+                    </div>
+                  </div>
+                  <p class="card__description">Components Implemented: <code>Scroll Driven Animation API</code> and <code>Popover API</code></p>
+                </div>
+              </a>      
+            </li>
+            <li>
+                <a href="/03/dist/index.html" class="card">
+                  <img class="card__image" loading="lazy" src="https://assets.codepen.io/67044/poseidon.png" alt="Poseidon">
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                      <img class="card__thumb" loading="lazy" src="https://assets.codepen.io/67044/internal/avatars/users/default.png?format=auto&version=1&width=80&height=80" alt="Michel">
+                      <div class="card__header-text">
+                        <h3 class="card__title">Wanderlust</h3>            
+                        <span class="card__status">Last modified: November 2024</span>
+                      </div>
+                    </div>
+                    <p class="card__description">Asymmetrical Grid Layout</code></p>
+                  </div>
+                </a>      
+              </li> 
+          </ul>
+
+
+        <!-- ul class="grid">
+          <li>
+            <a href="/01/dist/index.html" class="">Story 01 - Hangman</a>
+          </li>
+          <li>
+            <a href="/02/dist/index.html" class="">Story 02 - ShopShop</a>
+          </li>
+          <li>
+            <a href="/03/dist/index.html" class="">Story 03 - Wanderlust</a>
+          </li>
+          <li>
+            <a href="/04/dist/index.html" class=""
+              >Story 04 - Laid Back Loafers</a
+            >
+          </li>
+          <li>
+            <a href="/05/dist/index.html" class="">Story 05 - InFlow ❦</a>
+          </li>
+        </ul -->
+      </section>
+    </main>
+  </body>
 </html>
